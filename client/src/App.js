@@ -16,7 +16,7 @@ function App() {
         !chatScreen ?
         <Room username={username} setUsername={setUsername} room={room} setRoom={setRoom} setChatScreen={setChatScreen} socket={socket}/>
         :
-        <Chat/>
+        <Chat socket={socket} username={username} room={room}/>
       }
     </div>
   );
